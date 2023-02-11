@@ -5,7 +5,46 @@
 }
 
 
-.parent-container {
+.father-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+    padding: 1rem;
+    
+
+}
+
+
+.mother-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
+
+
+.child {
+    display: flex;
+    flex-direction: column;
+
+
+    padding: 1rem;
+    width: 300px;
+}
+
+
+/* img {
+    display: block;
+    margin-left: auto;
+}
+ */
+
+
+ img {
+    align-self: flex-end;
+    
+ }
