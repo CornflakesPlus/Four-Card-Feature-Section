@@ -1,50 +1,140 @@
+
+/* >>>>>>>>>>>>>>>>>>>> QUICK RESET <<<<<<<<<<<<<<<<<<<< */
+
 * {
     margin: 0;
     box-sizing: border-box;
-
 }
 
+/* >>>>>>>>>>>>>>>>>>>> BASE STYLES <<<<<<<<<<<<<<<<<<<< */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.938rem;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
+header {
+    margin-top: 5rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+span {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+header p {
+    padding: 0 1rem;
+    text-align: center;
+    font-weight: 200;
+}
+
+h2 {
+    padding-left: 1rem;
+}
+
+img {
+    align-self: flex-end;
+ }
+
+/* >>>>>>>>>>>>>>>>>>>> CLASS STYLES <<<<<<<<<<<<<<<<<<<< */
 
 .father-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    margin-top: 3rem;
+    margin: 3rem 0 4rem;
     padding: 1rem;
-    
-
 }
-
 
 .mother-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
-
 
 .child {
     display: flex;
     flex-direction: column;
-
-
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px -5px hsl(229, 6%, 66%),
+                0 -5px 0 0 hsl(34, 97%, 64%);
     padding: 1rem;
-    width: 300px;
+    width: 330px;
+    min-height: 250px;
 }
 
-
-/* img {
-    display: block;
-    margin-left: auto;
+.child p {
+    padding: 1rem;
 }
- */
 
+.child img {
+    margin: 1.5rem 2rem 0 0;
+}
 
- img {
-    align-self: flex-end;
-    
+.first {
+    box-shadow: 0 -5px 0 0 hsl(180, 62%, 55%),
+                0 0 20px -5px hsl(229, 6%, 66%);
+}
+
+.second {
+    box-shadow: 0 -5px 0 0 hsl(0, 78%, 62%),
+                0 0 20px -5px hsl(229, 6%, 66%);
+}
+
+.fourth {
+    box-shadow: 0 -5px 0 0 hsl(212, 86%, 64%),
+                0 0 20px -5px hsl(229, 6%, 66%);
+}
+
+/* >>>>>>>>>>>>>>>>>>>> MEDIA QUERIES <<<<<<<<<<<<<<<<<<<< */
+
+ @media screen and (min-width: 799px) {
+    .father-container {
+        flex-direction: row;
+    }
+
+    .mother-container {
+        width: 45%;
+    }
+
+    .first,
+    .fourth {
+        width: 25%;
+        margin-right: -2rem;
+    }
+
+    .fourth {
+        margin-left: -2rem;
+    }
+
+    .second,
+    .third {
+        width: 60%;
+    }
  }
+
+
+
+
+ /* >>>>>>>>>>>>>>>>>>>> END OF SCRIPT <<<<<<<<<<<<<<<<<<<< */
